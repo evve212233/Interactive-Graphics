@@ -352,7 +352,7 @@ struct vec4 {
 	{ return vec4( s*x, s*y, s*z, s*w ); }
 
     vec4 operator * ( const vec4& v ) const
-        { return vec4( x*v.x, y*v.y, z*v.z, w*v.w ); }  // YJC: Correct version
+        { return vec4( x*v.x, y*v.y, z*v.z, w*v.w ); }
     //	{ return vec4( x*v.x, y*v.y, z*v.z, w*v.z ); }  // Wrong! Fixed as above
 
     friend vec4 operator * ( const GLfloat s, const vec4& v )
